@@ -13,17 +13,24 @@
 <body>
     <form action="">
         <label for="idName" class="etiqueta">Nome Completo:</label>
-        <input type="text" name="nmName" id="idName">
+        <input type="text" name="nmName" id="idName" placeholder="Seu nome completo" required>
         <label for="idEmail" class="etiqueta">Email:</label>
-        <input type="text" name="nmEmail" id="idEmail">
+        <input type="email" name="nmEmail" id="idEmail" placeholder="nome@email.com" required>
         <label for="idEmpresa" class="etiqueta">Empresa/Organização:</label>
-        <input type="text" name="nmEmpresa" id="idEmpresa">
+        <input type="text" name="nmEmpresa" id="idEmpresa" placeholder="nome empresa">
         <label for="idTelefone" class="etiqueta">Tel.:</label>
-        <input type="text" name="nmTelefone" id="idTelefone">
+        <input type="text" name="nmTelefone" id="idTelefone" placeholder="(xx)xxxxx-xxxx">
         <label for="idContato" class="etiqueta">Motivo do Contato:</label>
-        <input type="text" name="nmContato" id="idContato">
+        <select name="nmMotivo" id="">
+            <option value="Elogio">Elogio</option>
+            <option value="Problema com produto">Problema com produto</option>
+            <option value="Reclamacao">Reclamação</option>
+            <option value="Sugestao">Sugestão</option>
+            <option value="Outro">Outro</option>
+        </select>
         <label for="idMensagem" class="etiqueta">Mensagem:</label>
-        <textarea name="nmMensagem" id="idMensagem" cols="30" rows="10"></textarea>
+        <textarea name="nmMensagem" id="idMensagem" cols="30" rows="10" placeholder="Escreva sua mensagem" required></textarea>
+        <button type="reset" class="etiqueta">Limpar</button>
         <button type="submit" class="etiqueta">Enviar</button>
     </form>
 </body>
