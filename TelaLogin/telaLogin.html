@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela Login</title>
+    <style>
+        .etiqueta{
+            display: block;
+        }
+
+        input{
+            margin-bottom: 10px;
+        }
+
+        button{
+            margin-top: 10px;
+        }
+
+        input:focus{
+            color: black;
+            background-color: rgb(230, 227, 227);
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <label for="idUsuario" class="etiqueta" >Usuário:</label>
+        <input type="text" name="nmUsuario" id="idUsuario" placeholder="Digite seu usuário" autocomplete="off" autofocus required>
+        <label for="idSenha" class="etiqueta">Senha:</label>
+        <input type="password" name="nmSenha" id="idSenha" placeholder="Digite sua senha" 
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Um campo numérico, minúsc, maiúsc, no mín 8 caracteres" required>
+        <button type="submit" class="etiqueta" >Login</button>
+    </form>
+</body>
+
+</html>
